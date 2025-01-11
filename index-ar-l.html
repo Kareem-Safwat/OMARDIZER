@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon" />
+    <title>OMARDIZER - تكنولوجيا | مكسرات وكل الجديد</title>
+    <meta name="copyright" content="Kareem Safwat" />
+    <meta
+      name="description"
+      content="هذا هو الموقع الرسمي لقناة عمر دايزر | صممت بواسطة كريم صفوت"
+    />
+    <meta name="author" content="Kareem Safwat" />
+    <meta name="og:title" content="OMARDIZER - تكنولوجيا | مكسرات وكل الجديد" />
+    <meta name="og:type" content="website" />
+    <meta name="og:image" content="imgs/favicon.png" />
+    <meta
+      name="og:description"
+      content="هذا هو الموقع الرسمي لقناة عمر دايزر | صممت بواسطة كريم صفوت"
+    />
+    <meta
+      name="keywords"
+      content="عمر دايزر، هاتف، تكنولوجيا، أجهزة، كمبيوتر، آيفون، سامسونج، جوجل، مايكروسوفت، تطبيقات، ألعاب، فيديوهات"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- styles -->
+    <style>
+      .switch {
+        font-size: 17px;
+        position: relative;
+        display: inline-block;
+        width: 64px;
+        height: 34px;
+      }
+
+      .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #73c0fc;
+        transition: background-color 0.4s;
+        border-radius: 30px;
+      }
+
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 30px;
+        width: 30px;
+        border-radius: 20px;
+        bottom: 2px;
+        z-index: 2;
+        background-color: #e8e8e8;
+        animation: translate 0.4s forwards;
+      }
+
+      .sun svg {
+        position: absolute;
+        top: 6px;
+        left: 36px;
+        z-index: 1;
+        width: 24px;
+        height: 24px;
+      }
+
+      .moon svg {
+        fill: #73c0fc;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        z-index: 1;
+        width: 24px;
+        height: 24px;
+      }
+
+      .sun svg {
+        animation: rotate 15s linear infinite;
+      }
+
+      @keyframes rotate {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .moon svg {
+        animation: tilt 5s linear infinite;
+      }
+
+      @keyframes tilt {
+        0% {
+          transform: rotate(0deg);
+        }
+        25% {
+          transform: rotate(-10deg);
+        }
+        75% {
+          transform: rotate(10deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+
+      @keyframes translate {
+        0% {
+          transform: translateX(-2px);
+        }
+        100% {
+          transform: translateX(-32px);
+        }
+      }
+
+      .input:checked + .slider {
+        background-color: #73c0fc;
+      }
+
+      .input:focus + .slider {
+        box-shadow: 0 0 1px #183153;
+      }
+    </style>
+    <!-- css libraries -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css.map" />
+    <link rel="stylesheet" href="css/libraries.css" />
+    <!-- main css files -->
+    <link rel="stylesheet" href="style-ar-l.css" />
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <nav class="nav-bar">
+        <a href="index-ar-l.html"
+          ><img src="imgs/logo-d.png" width="100px" alt="لوجو - عمر دايزر"
+        /></a>
+        <ul class="nav">
+          <li><a class="active" href="index-en-d.html">الرئيسية</a></li>
+          <li><a href="index-en-d.html">عنا</a></li>
+          <li><a href="index-en-d.html">فيديوهات</a></li>
+          <li><a href="index-en-d.html">تابعنا</a></li>
+        </ul>
+        <ul class="icons">
+          <li>
+            <label class="switch">
+              <a href="index-ar-d.html">
+                <span class="moon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 384 512"
+                  >
+                    <path
+                      d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"
+                    ></path></svg
+                ></span>
+                <span class="sun"
+                  ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <g fill="#ffd43b">
+                      <circle r="5" cy="12" cx="12"></circle>
+                      <path
+                        d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"
+                      ></path>
+                    </g></svg
+                ></span>
+                <input type="checkbox" class="input" />
+                <span class="slider"></span>
+              </a>
+            </label>
+          </li>
+          <li>
+            <a href="index-en-l.html"><i class="fa-solid fa-language"></i></a>
+          </li>
+        </ul>
+        <label class="popup">
+          <input type="checkbox" />
+          <div class="burger" tabindex="0">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <nav class="popup-window" style="left: 0; right: unset">
+            <ul>
+              <li>
+                <button>
+                  <a href="index-ar-l.html">
+                    <i class="fa-solid fa-house"></i>
+                    <span>الرئيسية</span>
+                  </a>
+                </button>
+              </li>
+              <li>
+                <button>
+                  <a href="pages/about-ar-l.html">
+                    <i class="fa-regular fa-lightbulb"></i>
+                    <span>عنا</span>
+                  </a>
+                </button>
+              </li>
+              <hr />
+              <li>
+                <button>
+                  <a href="pages/videos-ar-l.html">
+                    <i class="fa-brands fa-youtube"></i>
+                    <span>فيديوهات</span>
+                  </a>
+                </button>
+              </li>
+              <li>
+                <button>
+                  <a href="pages/follow-ar-l.html">
+                    <i class="fa-solid fa-user-plus"></i>
+                    <span>تابعنا</span>
+                  </a>
+                </button>
+              </li>
+              <hr />
+              <li>
+                <button>
+                  <ul class="icons">
+                    <li>
+                      <label class="switch">
+                        <a href="index-ar-d.html">
+                          <span class="moon"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 384 512"
+                            >
+                              <path
+                                d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"
+                              ></path></svg
+                          ></span>
+                          <span class="sun"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                            >
+                              <g fill="#ffd43b">
+                                <circle r="5" cy="12" cx="12"></circle>
+                                <path
+                                  d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"
+                                ></path>
+                              </g></svg
+                          ></span>
+                          <input type="checkbox" class="input" />
+                          <span class="slider"></span>
+                        </a>
+                      </label>
+                    </li>
+                    <li>
+                      <a href="index-en-l.html"
+                        ><i class="fa-solid fa-language"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </label>
+      </nav>
+      <header class="container">
+        <div class="right-side">
+          <p>مرحبا جميعا! اسمي</p>
+          <img src="imgs/arrow2.png" alt="arrow" />
+          <h2>عمر ابو الدهب</h2>
+          <p>
+            انا مهندس وصانع محتوى. <br />
+            ولدي قناة على
+            <a href="https://youtube.com/@Omardizer" target="_blank"
+              >اليوتيوب</a
+            >
+            بها اكثر من 5,000,000 متابع.
+          </p>
+          <div class="social-media">
+            <ul class="row-one">
+              <li>
+                <a href="https://twitter.com/Omardizer" target="_blank"
+                  ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://instagram.com/omardizer" target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+            <ul class="row-two">
+              <li>
+                <a
+                  href="https://www.facebook.com/OmardizerYouTube/"
+                  target="_blank"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://youtube.com/omardizer" target="_blank"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <img class="left-side" src="imgs/header.png" alt="صورة_عمر" width="550px" />
+      </header>
+      </div>
+  </body>
+</html>
